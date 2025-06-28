@@ -1,66 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+MANUAL BOOK WEBSITE ARTIKEL EDUKASI
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1. LOGIN DAN REGISTER
+- Buka halaman utama aplikasi
+- Klik tombol Register untuk membuat akun baru
+- Isi data nama, email, password, captcha, lalu klik Daftar
+- Setelah berhasil daftar, login menggunakan email dan password yang sudah dibuat
+- Jika sudah punya akun, langsung klik Login dan masukkan email serta password
 
-## About Laravel
+2. DASHBOARD
+- Setelah login, Anda akan diarahkan ke halaman Dashboard
+- Dashboard menampilkan statistik total artikel, kategori, user, admin, draft, dan tabel jumlah artikel per kategori
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+3. ARTIKEL
+- Klik menu Artikel di navbar untuk melihat daftar semua artikel yang ada
+- Semua user bisa melihat seluruh artikel yang sudah dibuat oleh siapapun
+- Untuk menambah artikel, klik tombol Tambah Artikel, isi form, lalu klik Simpan
+- Artikel bisa dipublish langsung atau disimpan sebagai draft
+- User hanya bisa mengedit dan menghapus artikel miliknya sendiri
+- Admin bisa mengedit dan menghapus semua artikel
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+4. KATEGORI
+- Menu Kategori hanya muncul dan bisa diakses oleh admin
+- Admin bisa menambah, mengedit, dan menghapus kategori
+- User biasa tidak bisa mengakses menu kategori
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+5. TENTANG
+- Menu Tentang berisi informasi tentang aplikasi, fitur, teknologi yang digunakan, dan kontak
 
-## Learning Laravel
+6. HAK AKSES
+- Admin bisa mengelola semua artikel, kategori, dan melihat semua data
+- User biasa hanya bisa menulis, mengedit, menghapus artikel miliknya sendiri, dan melihat semua artikel
+- User biasa tidak bisa mengelola kategori
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+7. DATA DUMMY
+- Data dummy (user, kategori, artikel) akan otomatis terisi jika menjalankan perintah php artisan migrate fresh --seed
+- User admin default email admin at dummy dot com password password
+- User biasa default email user at dummy dot com password password
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+8. GANTI LEVEL USER
+- Untuk mengubah level user menjadi admin atau user, buka phpMyAdmin, pilih tabel users, edit kolom level menjadi admin atau user sesuai kebutuhan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+9. RESET DATA
+- Untuk mengulang data dummy, jalankan perintah php artisan migrate fresh --seed di terminal
 
-## Laravel Sponsors
+10. UPLOAD GAMBAR ARTIKEL
+- Saat menambah atau mengedit artikel, Anda bisa mengupload gambar sendiri
+- Jika tidak mengupload gambar, maka artikel dummy akan menggunakan gambar placeholder otomatis
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+11. FITUR LAIN
+- Terdapat fitur publish dan unpublish artikel
+- Artikel yang sudah dipublish akan tampil di halaman utama (landing page)
+- Artikel draft hanya bisa dilihat oleh pemilik atau admin
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+PENJELASAN SINGKAT
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Website Artikel Edukasi adalah aplikasi berbasis Laravel yang memungkinkan user untuk menulis, mengedit, dan mempublikasikan artikel edukasi. Terdapat dua level user yaitu admin dan user biasa. Admin memiliki hak akses penuh untuk mengelola kategori dan semua artikel, sedangkan user biasa hanya bisa mengelola artikel miliknya sendiri. Data dummy dapat di-generate otomatis menggunakan seeder, sehingga aplikasi siap digunakan untuk demo atau pengembangan lebih lanjut.
