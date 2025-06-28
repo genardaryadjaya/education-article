@@ -1,0 +1,2 @@
+<img src="<?php echo e(asset('img/logo-sekolah.png')); ?>" alt="Logo Sekolah" class="w-10 h-10">
+<?php /**PATH C:\laragon\www\manajemendatasiswa\resources\views/components/application-logo.blade.php ENDPATH**/ ?>
